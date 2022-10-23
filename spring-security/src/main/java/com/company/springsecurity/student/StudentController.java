@@ -19,8 +19,11 @@ public class StudentController {
 
     @GetMapping(path = "{studentId}")
     public Student getStudentById(@PathVariable(value = "studentId") Integer studentId) {
-        return STUDENTS.stream()
-                .filter(student -> student.getStudentId() == studentId)
-                .findFirst().orElseThrow();
+        return
+                STUDENTS
+                        .stream()
+                        .filter(student -> student.getStudentId() == studentId)
+                        .findFirst()
+                        .orElseThrow();
     }
 }
