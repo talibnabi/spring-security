@@ -1,6 +1,7 @@
 package com.company.springsecurity.student;
 
 public class Student {
+    //https://amigoscode.com/courses/728126/lectures/13201433
     private final long studentId;
     private final String studentName;
     private final int studentAge;
